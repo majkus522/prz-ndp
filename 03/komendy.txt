@@ -1,0 +1,121 @@
+Zadanie 2
+#!/bin/bash
+
+Zadanie 3
+#!/bin/bash
+echo "Test polecenia skryptu"
+
+Zadanie 8
+#!/bin/bash
+
+Zadanie 9
+#!/bin/bash
+if test -f ~/cw3/pkt1; then
+  echo "Plik pkt1 istnieje."
+fi
+
+Zadanie 10
+#!/bin/bash
+if test -f ~/cw3/pkt1; then
+  echo "Plik pkt1 istnieje."
+fi
+if test -f ~/cw3/dane1; then
+    echo "Plik dane1 istnieje."
+else
+    echo "Linia tekstu w danych1" >> dane1
+fi
+
+Zadanie 11
+#!/bin/bash
+echo "Liczba x: "
+read x
+echo "Liczba y: "
+read y
+if ((x > y)); then
+    echo "Liczba x jest większa"
+else
+    echo "Liczba y jest większa"
+fi
+
+Zadanie 12
+#!/bin/bash
+echo "Liczba x: "
+read x
+echo "Liczba y: "
+read y
+if ((x == y)); then
+    echo "Liczby są równe"
+    exit 0
+fi
+if ((x > y)); then
+    echo "Liczba x jest większa"
+else
+    echo "Liczba y jest większa"
+fi
+
+Zadanie 13
+#!/bin/bash
+echo "Liczba x: "
+read x
+echo "Liczba y: "
+read y
+if [ -z "${x}" ] || [ -z "${y}" ]; then
+    echo "Nie podano poprawnych wartości"
+    exit 2
+fi
+if ((x == y)); then
+    echo "Liczby są równe"
+    exit 0
+fi
+if ((x > y)); then
+    echo "Liczba x jest większa"
+else
+    echo "Liczba y jest większa"
+fi
+
+Zadanie 14
+#!/bin/bash
+for file in *; do
+    if [[ -b "$file" ]] || [[ -c "$file" ]]; then
+        echo "$file - urządzenie"
+    elif [[ -d "$file" ]]; then
+        echo "$file - katalog"
+    elif [[ -f "$file" ]]; then
+        echo "$file - plik"
+    fi
+done
+
+Zadanie 15
+#!/bin/bash
+read -p "Tekst: " text
+read -p "N: " n
+index=0
+while (($index < $n)); do
+    echo $text
+    index=$((index + 1))
+done
+
+Zadanie 16
+#!/bin/bash
+while true; do
+    read -p "Podaj polecenie: " x
+    case "$x" in
+        a)
+            cat /dev/null > daty.log
+            ;;
+        b)
+            date >> daty.log
+            ;;
+        c)
+            cat daty.log
+            ;;
+        x)
+            exit 0
+            ;;
+        *)
+            for ((i = 1; i <= x; i++)); do
+                date
+            done
+            ;;
+    esac
+done

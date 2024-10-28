@@ -1,0 +1,312 @@
+\documentclass[fleqn,onecolumn,a4paper,12pt,titlepage]{article}
+\usepackage[showcrop]{geometry}
+\geometry{textheight=25.0cm,textwidth=17.0cm,headheight=3cm,headsep=0.5em}%hmargin=4.2cm
+\usepackage{graphicx}%[dvips,pdftex]
+\usepackage{amssymb}
+\usepackage{amsmath}%centertags
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{float}
+\usepackage[final]{listingsutf8}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{datetime2}
+\usepackage{enumitem}
+\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\pagestyle{fancy}
+\fancyfoot[L,R]{\tiny{\texttt{\symbol{64}}  built: \today{} at \DTMcurrenttime}} 
+
+\begin{document}
+
+\begin{titlepage}
+    \includegraphics[width=0.25\textwidth]{logo_kia.png}\par\vspace{3cm}
+    \centering
+    {\LARGE \textsc{Narzędzia dla programistów} \par}
+    \vspace{2cm}
+    {\Large \textsc{Laboratorium 3} \par} % NALEŻY UZUPEŁNIĆ
+    \vspace{2cm}
+    {\textsc{Skrypty powłoki} \par} % NALEŻY UZUPEŁNIĆ
+    \vfill
+    Mikołaj Hus $-$ 179503 $-$ L06 \par % NALEŻY UZUPEŁNIĆ
+    \vspace{2cm}
+    {\large {\today} \par}
+\end{titlepage}
+
+\section*{Zadanie 1}
+
+Uruchomienie programu \textit{Visual Studio Code}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{01.png}
+\end{figure}
+
+\section*{Zadanie 2}
+
+Rozpoczęcie skryptu \textit{Bash}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{02.png}
+\end{figure}
+
+\section*{Zadanie 3}
+
+Utworzenie prostego skryptu wyświetlającego tekst
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{03.png}
+\end{figure}
+
+\section*{Zadanie 4}
+
+Próba uruchomienia skryptu
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{04.png}
+\end{figure}
+Nie została podana ścieżka do pliku przez co Terminal uznał \textit{pkt1} za wbudowaną komendę.
+
+\section*{Zadanie 5}
+
+Ponowna próba uruchomienia skryptu
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{05.png}
+\end{figure}
+Plik nie posiada atrybutu pozwalającego na jego uruchomienie.
+
+\section*{Zadanie 6}
+
+Zmiana uprawnień pliku.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{06.png}
+\end{figure}
+
+\section*{Zadanie 7}
+
+Poprawne uruchomienie skryptu
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{07.png}
+\end{figure}
+Skrypt wypisał tekst podany w poleceniu \textit{echo}
+
+\section*{Zadanie 8}
+
+Przygotowanie kolejnego skryptu
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{081.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{082.png}
+\end{figure}
+
+\section*{Zadanie 9}
+
+Utworzenie skryptu sprawdzającego istnienie pliku
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{091.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{092.png}
+\end{figure}
+
+\section*{Zadanie 10}
+
+Sprawdzenie i utworzenie pliku \textit{dane1}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{101.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{102.png}
+\end{figure}
+
+\section*{Zadanie 11}
+
+Utworzenie pliku sprawdzającego która liczba jest większa
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{111.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{112.png}
+\end{figure}
+
+\section*{Zadanie 12}
+
+Rozszerzenie diałania skryptu o równość liczb
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{121.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{122.png}
+\end{figure}
+
+\section*{Zadanie 13}
+\subsection*{A. \normalfont{Sprawdzenie działania skryptu dla niepoprawnych danych}} 
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{131.png}
+\end{figure}
+Skrypt uznaje nieporawną wartośco jako liczbę 0
+\subsection*{B. \normalfont{Zabezpieczenie skryptu przed wprowadzenie niepoprawnych danych}} 
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{132.png}
+\end{figure}
+
+\section*{Zadanie 14}
+
+Utworzenie skryptu sprawdzającego zawartość katalogu
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{141.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{142.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{143.png}
+\end{figure}
+
+\section*{Zadanie 15}
+
+Utworzenie skryptu wypisującego podany tekst n-razy
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{151.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{152.png}
+\end{figure}
+
+\section*{Zadanie 16}
+
+Utworzenie skryptu operującego na datach i logach
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{161.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{162.png}
+\end{figure}
+
+\section*{Zadanie 18}
+
+Otworzenie pliku przy użyciu edytora \textit{VIM}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{18.png}
+\end{figure}
+
+\section*{Zadanie 19}
+
+Testowanie poruszania się po pliku
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{19.png}
+\end{figure}
+
+\section*{Zadanie 20}
+
+Powrót do początku pliku
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{20.png}
+\end{figure}
+
+\section*{Zadanie 21}
+
+Wyszukiwanie tekstu \textit{echo}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{21.png}
+\end{figure}
+
+\section*{Zadanie 22}
+
+Przejście do ostatniej lini pliku
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{22.png}
+\end{figure}
+
+\section*{Zadanie 23}
+
+Usunięcie bierzącej lini
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{23.png}
+\end{figure}
+
+\section*{Zadanie 24}
+
+Dodanie nowej lini
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{24.png}
+\end{figure}
+
+\section*{Zadanie 25}
+
+Wprowadzenie komentarza
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{25.png}
+\end{figure}
+
+\section*{Zadanie 26}
+
+Wstawienie wyciętej lini
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{26.png}
+\end{figure}
+
+\section*{Zadanie 27}
+
+Zapisanie pliku
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{27.png}
+\end{figure}
+
+\section*{Zadanie 28}
+
+Przejście do 3 lini pliku
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{28.png}
+\end{figure}
+
+\section*{Zadanie 29}
+
+Wstawienie podanego tekstu
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{29.png}
+\end{figure}
+
+\section*{Zadanie 30}
+
+Opuszczenie trybu wstawiania i zapisanie pliku
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{30.png}
+\end{figure}
+
+\section*{Zadanie 31}
+
+Uruchomienie skryptu
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{31.png}
+\end{figure}
+
+\section*{Zadanie 32}
+
+Zakończenie pracy edytora
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{32.png}
+\end{figure}
+
+\end{document}
