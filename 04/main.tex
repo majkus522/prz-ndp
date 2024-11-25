@@ -1,0 +1,34 @@
+\documentclass[12pt,twoside]{book}
+\usepackage{lipsum}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{graphicx}%[dvips,pdftex]
+\usepackage{hyperref}
+\usepackage{tikz}
+\author{Mikołaj Hus}
+\title{Skład tekstu w praktyce}
+\begin{document}
+\begin{figure}[!htp]
+\centering
+\begin{tikzpicture}[node distance=1.25cm,main/.style = {draw, circle}]
+\node[main] (1) {a};
+\node[main] (2) [below right of=1] {b};
+\node[main] (3) [above right of=1] {c};
+\node[main,draw=none] (4) [right of=3] {~};
+\draw[->] (1) to (2);
+\draw[->,color=green] (1) to (3);
+\draw[->,dashed,color=blue] (3) to (4);
+\node (4) [above right of=2] {};
+\node (5) [right of=4] {};
+\node[main] (6) [right of=5] {$\Delta$};
+\node (7) [below right of=6] {};
+\node[main] (8) [right of=7] {z};
+\draw[->] (2) to (6);
+\draw[->] (3) to (6);
+\draw[->,dotted,color=red] (1) to (6);
+\draw[->,color=red] (2) to (8);
+\draw[->>,color=red] (8) to (6);
+\end{tikzpicture}
+\end{figure}
+\end{document}

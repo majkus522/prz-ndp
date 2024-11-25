@@ -1,0 +1,172 @@
+Zadanie 2
+\documentclass[12pt,twoside]{book}
+\author{Mikołaj Hus}
+\title{Skład tekstu w praktyce}
+\begin{document}
+\end{document}
+
+Zadanie 3
+\documentclass[12pt,twoside]{book}
+\usepackage{lipsum}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{graphicx}%[dvips,pdftex]
+\usepackage{hyperref}
+\usepackage{tikz}
+\author{Mikołaj Hus}
+\title{Skład tekstu w praktyce}
+\begin{document}
+\part{}
+\chapter{}
+\section*{1.1.1.}
+\lipsum[1]
+\section*{1.1.2.}
+\lipsum[2]
+\chapter{}
+\section*{1.2.1.}
+\lipsum[3]
+\section*{1.2.2.}
+\lipsum[4]
+\part{}
+\chapter{}
+\section*{2.1.1.}
+\lipsum[5]
+\section*{2.1.2.}
+\lipsum[6]
+\chapter{}
+\section*{2.2.1.}
+\lipsum[7]
+\section*{2.2.2.}
+\lipsum[8]
+\end{document}
+
+Zadanie 5
+\textbf{Pogrubiony}
+
+Zadanie 6
+\textsl{Pochyły}
+
+Zadanie 7
+\textit{Kursywa}
+
+Zadanie 8
+\underline{Podkreślenie}
+
+Zadanie 9
+\verb!Maszynopis!
+
+Zadanie 10
+Porównanie
+\large{Większe}
+
+Zadanie 11
+Porównanie
+\small{Mniejsze}
+
+Zadanie 12
+\begin{enumerate}
+\item Pierwsze
+\item Drugie
+\item Trzecie
+\end{enumerate}
+
+Zadanie 13
+\begin{itemize}
+\item Pierwsze
+\item Drugie
+\item Trzecie
+\end{itemize}
+
+Zadanie 14
+\begin{figure}
+    \centering\includegraphics[width=0.9\textwidth]{image.png}
+    \caption{Przykładowy tekst}
+    \label{fig:krajobraz}
+\end{figure}
+
+Zadanie 15
+\begin{table}%
+    \centering%
+    \caption{Przykładowa tabela}%
+    \label{tab:tabela}%
+    \begin{tabular}{|c|c|c|}%
+        \hline%
+        \textbf{11} &
+        \textbf{12} &
+        \textbf{13} \\
+        \hline%
+        \textbf{21} &
+        \textbf{22} &
+        \textbf{23} \\
+        \hline%
+        \textbf{31} &
+        \textbf{32} &
+        \textbf{33} \\
+        \hline%
+        \textbf{41} &
+        \textbf{42} &
+        \textbf{43} \\
+        \hline%
+        \textbf{51} &
+        \textbf{52} &
+        \textbf{53} \\
+        \hline%
+    \end{tabular}%
+\end{table}
+
+Zadanie 16
+\begin{equation}
+P = \pi r^2
+\end{equation}
+
+Zadanie 17
+\begin{equation}
+\Delta = b^2 - 4 \cdot a \cdot c
+\end{equation}
+\begin{equation}
+x_{1} = \frac{-b - \sqrt{\Delta}}{2 \cdot a}
+\end{equation}
+\begin{equation}
+x_{2} = \frac{-b + \sqrt{\Delta}}{2 \cdot a}
+\end{equation}
+
+Zadanie 18
+Obraz \ref{fig:krajobraz}
+Tabela \ref{tab:tabela}
+Wzór \ref{eqn:kolo}
+
+Zadanie 19
+\footnote{Przypis - opis}
+
+Zadanie 20
+\$ \# \% \^{} \& " [ ] \textbackslash{} \~{} \{ \} \textbar{} \_ @
+
+Zadanie 21
+\tableofcontents
+\listoffigures
+\listoftables
+
+Zadanie 22
+\begin{figure}[!htp]
+\centering
+\begin{tikzpicture}[node distance=1.25cm,main/.style = {draw, circle}]
+\node[main] (1) {a};
+\node[main] (2) [below right of=1] {b};
+\node[main] (3) [above right of=1] {c};
+\node[main,draw=none] (4) [right of=3] {~};
+\draw[->] (1) to (2);
+\draw[->,color=green] (1) to (3);
+\draw[->,dashed,color=blue] (3) to (4);
+\node (4) [above right of=2] {};
+\node (5) [right of=4] {};
+\node[main] (6) [right of=5] {$\Delta$};
+\node (7) [below right of=6] {};
+\node[main] (8) [right of=7] {z};
+\draw[->] (2) to (6);
+\draw[->] (3) to (6);
+\draw[->,dotted,color=red] (1) to (6);
+\draw[->,color=red] (2) to (8);
+\draw[->>,color=red] (8) to (6);
+\end{tikzpicture}
+\end{figure}
