@@ -1,0 +1,188 @@
+\documentclass[fleqn,onecolumn,a4paper,12pt,titlepage]{article}
+\usepackage[showcrop]{geometry}
+\geometry{textheight=25.0cm,textwidth=17.0cm,headheight=3cm,headsep=0.5em}%hmargin=4.2cm
+\usepackage{graphicx}%[dvips,pdftex]
+\usepackage{amssymb}
+\usepackage{amsmath}%centertags
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{float}
+\usepackage[final]{listingsutf8}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{datetime2}
+\usepackage{enumitem}
+\usepackage{blindtext}
+
+\newcommand{\kod}[1]{\texttt{#1}}
+
+\pagestyle{fancy}
+\fancyfoot[L,R]{\tiny{\texttt{\symbol{64}}  built: \today{} at \DTMcurrenttime}} 
+
+\begin{document}
+
+\begin{titlepage}
+    \includegraphics[width=0.25\textwidth]{logo_kia.png}\par\vspace{3cm}
+    \centering
+    {\LARGE \textsc{Narzędzia dla programistów} \par}
+    \vspace{2cm}
+    {\Large \textsc{Laboratorium 5} \par} % NALEŻY UZUPEŁNIĆ
+    \vspace{2cm}
+    {\textsc{Pakiety LATEX i własne makra} \par} % NALEŻY UZUPEŁNIĆ
+    \vfill
+    Mikołaj Hus $-$ 179503 $-$ L06 \par % NALEŻY UZUPEŁNIĆ
+    \vspace{2cm}
+    {\large {\today} \par}
+\end{titlepage}
+
+\section*{Zadanie 1}
+Przygotowanie do pracy.
+
+\section*{Zadanie 2}
+Zbudowanie projektu LATEX.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{02.png}
+\end{figure}
+
+\section*{Zadanie 3}
+Dodanie obsługi pakietu \textit{caption}.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{03.png}
+\end{figure}
+
+\section*{Zadanie 4}
+Modyfikacja style podpisów dla tabel.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{04.png}
+\end{figure}
+
+\section*{Zadanie 5}
+Dodanie kropek po numerach punktów i podpunktów.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{05.png}
+\end{figure}
+
+\section*{Zadanie 6}
+Zmiana stylu wyswietlania numerów równań.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{06.png}
+\end{figure}
+
+\section*{Zadanie 7}
+Utworzenie nowego polecenia.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{07.png}
+\end{figure}
+
+\section*{Zadanie 8}
+Zmiana stylu wypunktowania.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{08.png}
+\end{figure}
+
+\section*{Zadanie 9}
+Dodanie nowej listy wypunktowanej.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{09.png}
+\end{figure}
+
+\section*{Zadanie 10}
+Dodanie układu równań.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{10.png}
+\end{figure}
+
+\section*{Zadanie 11}
+Dodanie odwołania do wzrou.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{11.png}
+\end{figure}
+
+\section*{Zadanie 12}
+Zdefiniowanie własnego koloru.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{12.png}
+\end{figure}
+
+\section*{Zadanie 13}
+Użycie nowego koloru.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{13.png}
+\end{figure}
+
+\section*{Zadanie 14}
+Dołaczenie kodu źródłowego z innego pliku.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{14.png}
+\end{figure}
+
+\section*{Zadanie 15}
+Zmiana języka oraz kodowania.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{15.png}
+\end{figure}
+
+\section*{Zadanie 16}
+Zmiana domyślnego wyświetlania listingów.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{16.png}
+\end{figure}
+
+\section*{Zadanie 17}
+Zmiana danych pliku PDF.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{17.png}
+\end{figure}
+
+\section*{Zadanie 18}
+Dodanie załącznika do pliku.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{18.png}
+\end{figure}
+
+\section*{Zadanie 19}
+Dołączenie bibliografi.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{19.png}
+\end{figure}
+
+\section*{Zadanie 20}
+Importowanie bazy literatury.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{20.png}
+\end{figure}
+
+\section*{Zadanie 21}
+Skompilowanie dokumentu i sprawdzenie bibliografi.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{21.png}
+\end{figure}
+
+\section*{Zadanie 22}
+Dodanie nowej pozycji do bibliografi.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{22.png}
+\end{figure}
+
+\section*{Zadanie 23}
+Użycie cytowania.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{23.png}
+\end{figure}
+
+\section*{Zadanie 24}
+Zmiana formatu cytowania.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{24.png}
+\end{figure}
+
+\section*{Zadanie 25}
+Modyfikacja obwodu elektronicznego.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{25.png}
+\end{figure}
+
+\end{document}
+
