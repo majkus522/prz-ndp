@@ -1,0 +1,299 @@
+\documentclass[fleqn,onecolumn,a4paper,12pt,titlepage]{article}
+\usepackage[showcrop]{geometry}
+\geometry{textheight=25.0cm,textwidth=17.0cm,headheight=3cm,headsep=0.5em}%hmargin=4.2cm
+\usepackage{graphicx}%[dvips,pdftex]
+\usepackage{amssymb}
+\usepackage{amsmath}%centertags
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{float}
+\usepackage[final]{listingsutf8}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{datetime2}
+\usepackage{enumitem}
+\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\pagestyle{fancy}
+\fancyfoot[L,R]{\tiny{\texttt{\symbol{64}}  built: \today{} at \DTMcurrenttime}} 
+
+\begin{document}
+
+\begin{titlepage}
+    \includegraphics[width=0.25\textwidth]{kai.png}\par\vspace{3cm}
+    \centering
+    {\LARGE \textsc{Narzędzia dla programistów} \par}
+    \vspace{2cm}
+    {\Large \textsc{Laboratorium 6} \par} % NALEŻY UZUPEŁNIĆ
+    \vspace{2cm}
+    {\textsc{System kontroli wersji GIT} \par} % NALEŻY UZUPEŁNIĆ
+    \vfill
+    Mikołaj Hus $-$ 179503 $-$ L06 \par % NALEŻY UZUPEŁNIĆ
+    \vspace{2cm}
+    {\large {\today} \par}
+\end{titlepage}
+
+\section*{Zadanie 1}
+Sprawdzenie nazwy użytkownika i adresu email w konfiguracji GIT.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{01.png}
+\end{figure}
+
+\section*{Zadanie 2}
+Sprawdzenie numeru stanowiska.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{02.png}
+\end{figure}
+
+\section*{Zadanie 3 - 4}
+Ustalenie nazw repozytoriów.
+\lstinputlisting{03.txt}
+
+\section*{Zadanie 5 - 7}
+Utworzenie folderu roboczego i inicjalizacja repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{05.png}
+\end{figure}
+
+\section*{Zadanie 8}
+Skopiowanie pliku źródłowego do folderu roboczego.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{08.png}
+\end{figure}
+
+\section*{Zadanie 9}
+Dodanie pliku do repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{09.png}
+\end{figure}
+
+\section*{Zadanie 10}
+Zatwierdzenie wersji.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{10.png}
+\end{figure}
+
+\section*{Zadanie 11}
+Sprawdzenie statusu repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{11.png}
+\end{figure}
+
+\section*{Zadanie 12}
+Wprowadzenie zmian w pliku źródłowym.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{12.png}
+\end{figure}
+
+\section*{Zadanie 13 - 14}
+Dodanie pliku i zatwierdzenie zmian.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{13.png}
+\end{figure}
+
+\section*{Zadanie 15}
+Sprawdzenie logów repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{15.png}
+\end{figure}
+
+\section*{Zadanie 16}
+Dodanie etykiety do tej wersji dokumentu.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{16.png}
+\end{figure}
+
+\section*{Zadanie 17}
+Dokonanie zmian i ich zatwierdzenie.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{17.png}
+\end{figure}
+
+\section*{Zadanie 18}
+Utworzenie kolejnego folderu.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{18.png}
+\end{figure}
+
+\section*{Zadanie 19}
+Skopiowanie lokalnego repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{19.png}
+\end{figure}
+
+\section*{Zadanie 20}
+Umieszczenie pliku źródłowego C w repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{20.png}
+\end{figure}
+
+\section*{Zadanie 21}
+Dodanie pliku i zatwierdzenie zmian.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{21.png}
+\end{figure}
+
+\section*{Zadanie 22}
+Wyświetlenie nazw serwerów.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{22.png}
+\end{figure}
+
+\section*{Zadanie 23}
+Dodanie zdalnego repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{23.png}
+\end{figure}
+
+\section*{Zadanie 24}
+Ustawienie domyślnego celu wysyłania.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{24.png}
+\end{figure}
+
+\section*{Zadanie 25}
+Powrót do poprzedniego folderu.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{25.png}
+\end{figure}
+
+\section*{Zadanie 26}
+Dodanie zdalnego repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{26.png}
+\end{figure}
+
+\section*{Zadanie 27}
+Dodanie serwera zdalnego, które zostaje odrzucone przez brak aktualnych zmian. Pobranie i uaktualnienie zmian z serwera.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{27.png}
+\end{figure}
+
+\section*{Zadanie 28}
+Modyfikacja pliku \textit{raport.tex}.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{28.png}
+\end{figure}
+
+\section*{Zadanie 29}
+Dodanie zmian do repozytorium.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{29.png}
+\end{figure}
+
+\section*{Zadanie 30}
+Dokonanie zmian w repozytorium \textit{lok} i próba przesłania zmian na serwer zakończona niepowodzeniem.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{30.png}
+\end{figure}
+
+\section*{Zadanie 31}
+Pobranie zmian z serwera oraz rozwiązanie problemów związanych z scalaniem.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{31.png}
+\end{figure}
+
+\section*{Zadanie 32}
+Przesłanie scalenia na serwer.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{32.png}
+\end{figure}
+
+\section*{Zadanie 33 - 34}
+Utworzenie katalogu roboczego i sklonowanie repozytorium wspólnego.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{33.png}
+\end{figure}
+
+\section*{Zadanie 35}
+Wprowadzenie indeksu do pliku \textit{.tex}.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{35.png}
+\end{figure}
+
+\section*{Zadanie 36}
+Utworzenie pliku \textit{tresc.txt}.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{36.png}
+\end{figure}
+
+\section*{Zadanie 37}
+Zatwierdzenie zmian i przesłanie ich na serwer.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{37.png}
+\end{figure}
+
+\section*{Zadanie 38}
+Utworzenie nowej gałęzi repozytorium oraz przesłanie jej na serwer.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{38.png}
+\end{figure}
+
+\section*{Zadanie 39}
+Przełączenie gałęzi, pobranie zmian z serwera i scalenie zmian.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{39.png}
+\end{figure}
+
+\section*{Zadanie 40}
+Rozwiązanie potencjalnych konfliktów jeżeli takie istnieją.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{40.png}
+\end{figure}
+
+\section*{Zadanie 41}
+Sprawdzenie kto zatwierdził daną linię pliku.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{41.png}
+\end{figure}
+
+\section*{Zadanie 42}
+Sprawdzenie autorów dla pliku na innej gałęzi.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{42.png}
+\end{figure}
+
+\section*{Zadanie 43}
+Scalenie gałęzi pobocznej do gałęzi głównej.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{43.png}
+\end{figure}
+
+\section*{Zadanie 44}
+Sprawdzenie gałęzi na serwerze.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{44.png}
+\end{figure}
+
+\section*{Zadanie 42}
+Przełączenie do gałęzi głownej i usunięcie gałęzi lokalnej.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{42.png}
+\end{figure}
+
+\end{document}
