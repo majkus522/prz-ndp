@@ -1,0 +1,107 @@
+Zadanie 3
+mkdir -p kat1/kat2/kat{3..4} kat5/kat6/kat7 kat5/kat8
+
+Zadanie 4
+cd kat1/kat2/kat4
+cat - > tresc.txt
+
+Zadanie 5
+cat tresc.txt
+
+Zadanie 6
+date > ~/kat1/godzina.txt
+
+Zadanie 7
+cat ~/kat1/godzina.txt
+
+Zadanie 8
+cd ~/kat5
+find ~/kat1
+
+Zadanie 9
+cat ~/kat1/kat2/kat4/tresc.txt > kat6/zlaczone.txt
+cat ~/kat1/godzina.txt >> kat6/zlaczone.txt
+
+Zadanie 10
+touch 'kat8/fi le'
+touch 'kat8/fi:le'
+touch 'kat8/fi;le'
+touch 'kat8/fi!le'
+touch 'kat8/-file'
+touch 'kat8/.file'
+touch 'kat8/fi?le'
+touch 'kat8/fi*le'
+touch $'kat8/fi\rle'
+
+Zadanie 11
+mv 'kat8/fi le' 'fi le'
+mv 'kat8/fi:le' 'fi:le'
+
+Zadanie 12
+mv 'kat8/fi;le' kat8/file
+
+Zadanie 13
+rm 'kat8/fi!le' 'kat8/fi?le'
+
+Zadanie 14
+cp -r kat8/* kat7/
+
+Zadanie 17
+pwd > ~/kat1/kat2/polozenie
+
+Zadanie 18
+pushd ~
+ls > ~/kat5/kat6/kat7/lista.txt
+
+Zadanie 19
+ls -1R kat? >> ~/kat5/kat6/kat7/lista.txt
+
+Zadanie 20
+less ~/kat5/kat6/kat7/lista.txt
+
+Zadanie 21
+rm ~/kat5/kat6/kat7/*
+
+Zadanie 23
+set | less
+
+Zadanie 24
+#!/bin/bash
+echo "Podaj pierwszą liczbę: "
+read a
+echo "Podaj drugą liczbę: "
+read b
+suma=$((a+b))
+echo "Suma: $suma"
+
+Zadanie 26
+#!/bin/bash
+for imie in Aniu Tomku Kasiu Mateuszu
+do
+	echo "Witaj $imie na zajęciach!"
+done
+
+Zadanie 27
+#!/bin/bash
+index=1
+while [ $index -le 10 ]
+do
+	echo "tekst" >> text.txt
+	index=$((index + 1))
+done
+
+Zadanie 28
+#!/bin/bash
+for i in 1..5
+do
+    date > "file$i.txt"
+    echo "179503" >> "file$i.txt"
+    sleep 3
+end
+
+Zadanie 29
+#!/bin/bash
+for file in *.txt; do
+  echo "Nazwa pliku: $file"
+  cat "$file"
+done

@@ -1,0 +1,281 @@
+\documentclass[fleqn,onecolumn,a4paper,12pt,titlepage]{article}
+\usepackage[showcrop]{geometry}
+\geometry{textheight=25.0cm,textwidth=17.0cm,headheight=3cm,headsep=0.5em}%hmargin=4.2cm
+\usepackage{graphicx}%[dvips,pdftex]
+\usepackage{amssymb}
+\usepackage{amsmath}%centertags
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{float}
+\usepackage[final]{listingsutf8}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{datetime2}
+\usepackage{enumitem}
+\usepackage{blindtext}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Bash,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\pagestyle{fancy}
+\fancyfoot[L,R]{\tiny{\texttt{\symbol{64}}  built: \today{} at \DTMcurrenttime}} 
+
+\begin{document}
+
+\begin{titlepage}
+    \includegraphics[width=0.25\textwidth]{kia.png}\par\vspace{3cm}
+    \centering
+    {\LARGE \textsc{Narzędzia dla programistów} \par}
+    \vspace{2cm}
+    {\Large \textsc{Laboratorium 2} \par} % NALEŻY UZUPEŁNIĆ
+    \vspace{2cm}
+    {\textsc{Polecenia powłoki Bash} \par} % NALEŻY UZUPEŁNIĆ
+    \vfill
+    Mikołaj Hus $-$ 179503 $-$ L06 \par % NALEŻY UZUPEŁNIĆ
+    \vspace{2cm}
+    {\large {\today} \par}
+\end{titlepage}
+
+\section*{Zadanie 1}
+Zapoznanie się z terminalem.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{01.png}
+\end{figure}
+
+\section*{Zadanie 2}
+Zapoznanie się podstawowymi poleceniami.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{021.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{022.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{023.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{024.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{025.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{026.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{027.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{028.png}
+\end{figure}
+
+\section*{Zadanie 3}
+Utworzenie struktury folderów.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{03.png}
+\end{figure}
+
+\section*{Zadanie 4}
+Przekierowanie wejścia do pliku za pomocą polecenia \textit{cat}.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{04.png}
+\end{figure}
+
+\section*{Zadanie 5}
+Wyświetlenie zawartości pliku.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{05.png}
+\end{figure}
+
+\section*{Zadanie 6}
+Przekierowanie polecenia \textit{date} do pliku.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{06.png}
+\end{figure}
+
+\section*{Zadanie 7}
+Sprawdzenie pobranej godziny.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{07.png}
+\end{figure}
+
+\section*{Zadanie 8}
+Wyświetlenie zawartości katalogów.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{08.png}
+\end{figure}
+
+\section*{Zadanie 9}
+Połączenie dwóch plików tekstowych.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{09.png}
+\end{figure}
+
+\section*{Zadanie 10}
+Utworzenie plików ze znakami specjalnymi w nazwie.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{10.png}
+\end{figure}
+
+\section*{Zadanie 11}
+Przeniesienie plików ze znakami specjalnymi w nazwie.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{11.png}
+\end{figure}
+
+\section*{Zadanie 12}
+Zmiana nazwy pliku ze znakami specjalnymi w nazwie.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{12.png}
+\end{figure}
+
+\section*{Zadanie 13}
+Usunięcie plików ze znakami specjalnymi w nazwie.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{13.png}
+\end{figure}
+
+\section*{Zadanie 14}
+Skopiowanie zawartości katalogu.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{14.png}
+\end{figure}
+
+\section*{Zadanie 15}
+Wyświetlenie zmiennej systemowej \textit{PATH}.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{15.png}
+\end{figure}
+
+\section*{Zadanie 16}
+Wyświetlenie zmiennej systemowej \textit{PATH} z podziałem na linie.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{16.png}
+\end{figure}
+
+\section*{Zadanie 17}
+Zapisanie obecnego położenia do pliku.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{17.png}
+\end{figure}
+
+\section*{Zadanie 18}
+Przekierowanie zawartości katalogu domowego do pliku.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{18.png}
+\end{figure}
+
+\section*{Zadanie 19}
+Sprawdzenie zawartości folderu z użyciem rekurencji i filtrowania.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{19.png}
+\end{figure}
+
+\section*{Zadanie 20}
+Wyświetlenie zawartości pliku z użyciem polecenie \textit{less}.
+Na liście nie pojawia się plik rozpoczęty kropką ponieważ w taki sposób oznaczane są pliku ukryte.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{20.png}
+\end{figure}
+
+\section*{Zadanie 21}
+Usunięcie całej zawartości folderu.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{21.png}
+\end{figure}
+
+\section*{Zadanie 22}
+Powrót do zapamiętanego katalogu.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{22.png}
+\end{figure}
+
+\section*{Zadanie 23}
+Wyświetlenie zmiennych systemowych.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{23.png}
+\end{figure}
+
+\section*{Zadanie 24}
+Napisanie skryptu sumującego 2 liczby.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{241.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{242.png}
+\end{figure}
+
+\section*{Zadanie 25}
+Sprawdzenie kodów zakończenia poleceń.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{251.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{252.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{253.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{254.png}
+\end{figure}
+
+\section*{Zadanie 26}
+Skrypt wyświetlający listę imion.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{261.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{262.png}
+\end{figure}
+
+\section*{Zadanie 27}
+Skrypt dopisujący 10 razy ten sam tekst.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{271.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{272.png}
+\end{figure}
+
+\section*{Zadanie 28}
+Skrypt pobierający aktualną godzinę co 3 sekundy.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{281.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{282.png}
+\end{figure}
+
+\section*{Zadanie 29}
+Skrypt wyświetlający pliki i ich zawartość.
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{291.png}
+\end{figure}
+\begin{figure}[H]%
+    \centering\includegraphics[width=0.9\textwidth]{292.png}
+\end{figure}
+
+\end{document}
